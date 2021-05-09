@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "psychologists",
+  "info": {
+    "name": "Psychologist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "otherPhone": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "website2": {
+      "type": "string"
+    },
+    "specialties": {
+      "type": "string"
+    },
+    "treatmentOrientation": {
+      "type": "string"
+    },
+    "insuranceAccepted": {
+      "type": "string"
+    },
+    "treatmentModality": {
+      "type": "string"
+    },
+    "assessmentEvaluations": {
+      "type": "string"
+    },
+    "populationsServed": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "imgurl": {
+      "type": "string"
+    },
+    "ps_url": {
+      "type": "string"
+    }
+  }
+}
