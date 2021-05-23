@@ -1,0 +1,78 @@
+/* LANDING SECTION  */
+
+#landing {
+	height: 50vh;
+}
+
+.landingImage {
+
+}
+
+.landingTitle {
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #800000;
+}
+
+.landingHeading {
+	font-weight: 900;
+	color: white;
+}
+
+.landingCaption {
+	color: gray;
+}
+
+.landingButtons {
+	margin: 1rem;
+}
+
+.landingButton {
+	background-color: #800000;
+	padding: 0.75rem 0.75rem;
+	border-radius: 0.125rem;
+	color: white;
+}
+
+.landingButton:hover, .findButton:hover {
+	color: white;
+	text-decoration: none;
+}
+
+/* FIND PSYCHOLOGIST SECTION */
+
+#find {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	margin-bottom: 5rem;
+	background-color: white;
+	text-align: center;
+}
+
+.findHeader {
+	font-weight: 900;
+	color: black;
+}
+
+.findCaption {
+	margin-bottom: 2rem;
+}
+
+.findButton {
+	background-color: #800000;
+	padding: 0.75rem 0.75rem;
+	border-radius: 0.125rem;
+	color: white;
+	margin-bottom: 4rem;
+}
+
+.findImage {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+
+	.findImage {
+		display: none;
+	}
+}

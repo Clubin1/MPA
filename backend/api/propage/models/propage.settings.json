@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "propages",
+  "info": {
+    "name": "propage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "becomeHeader": {
+      "type": "string"
+    },
+    "becomeDesc": {
+      "type": "text"
+    },
+    "becomeButton": {
+      "type": "string"
+    },
+    "officeHeader": {
+      "type": "string"
+    },
+    "officeDesc": {
+      "type": "text"
+    }
+  }
+}
