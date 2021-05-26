@@ -77,6 +77,10 @@
     },
     "ps_url": {
       "type": "string"
+    },
+    "isAccepted": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
