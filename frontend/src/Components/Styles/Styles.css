@@ -1,0 +1,114 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: black!important;
+  overflow-x: hidden;
+  transition: 2s opacity;
+  background-color: #1D1D1D; 
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body:fade {
+  opacity: 0;
+  transition: none;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 10.5rem;
+}
+
+.offset2:before {
+  display: block;
+  content: "";
+  height: 3.5rem;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: #1D1D1D;
+  
+}
+
+.nav-btn {
+  padding: 9px 25px;
+
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  color: #752F37;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: #923A44;
+  text-decoration: none!important;
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.navbar-brand img {
+  height: 4rem;
+}
+
+.navbar-nav li{
+  padding-right: 3rem;
+  float: right;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #752F37;
+  padding-top: .8rem;
+}
+
+/* Nav Hover */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #923A44;
+  transition: all 300ms ease;
+}
+
+
+.navbar-toggler {
+  background-color: #752F37!important;
+  border-color: black;
+}
+
+
+
+
+
+
+
+
+/*** FOOTER SECTION ***/
+
+#footer {
+  background-color: #1D1D1D;
+  text-align: center;
+  z-index: auto;
+}
+
+.footerLogo {
+  font-weight: 900;
+  color: white;
+}
+
+.footerTag {
+  width: 100%;
+  color: #800000;
+}
