@@ -1,0 +1,60 @@
+.aboutSection {
+	margin-top: 10rem;
+	color: white;
+}
+
+ {
+	color: white;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.servingCaption, .psychologistCaption {
+	width: 80%;
+}
+
+.psychologistSection, .servingSection {
+	color: white;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-left: 1rem;
+	border-left: 2px solid white;
+}
+
+
+.aboutHeader, .servingHeader, .psychologistHeader {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.boardSection {
+	color: white;
+	margin: 2rem;
+	text-align: center;
+}
+.boardHeader {
+	font-weight: 800;
+	text-transform: uppercase;
+
+}
+
+.threeSection {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+hr {
+	background-color: white;
+}
+
+.boardMembers {
+	margin: 1rem;
+}
+
+.boardMembersName {
+	font-weight: 800;
+}
+
+.boardMembersPosition {
+	color: #800000;
+}

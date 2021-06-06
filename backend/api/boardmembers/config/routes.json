@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/boardmembers",
+      "handler": "boardmembers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boardmembers/count",
+      "handler": "boardmembers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boardmembers/:id",
+      "handler": "boardmembers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/boardmembers",
+      "handler": "boardmembers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/boardmembers/:id",
+      "handler": "boardmembers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/boardmembers/:id",
+      "handler": "boardmembers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

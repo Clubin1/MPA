@@ -13,7 +13,7 @@ const Footer = () => {
 						<h1 className="footerLogo">MPACHARLOTTE</h1>
 					</Col>
 					<Col md={6}>
-						<h4 className="footerTag">Copyright 2019 © Mecklenburg Psychological Association. <br /> All rights reserved.</h4>
+						<h4 className="footerTag">Copyright 2021 © Mecklenburg Psychological Association. <br /> All rights reserved.</h4>
 					</Col>
 				</Row>
 
