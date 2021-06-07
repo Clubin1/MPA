@@ -10,9 +10,8 @@ class Landing extends Component {
 					<div>
 						<h6 className="landingTitle">MPACHARLOTTE.ORG</h6>
 						<h1 className="landingHeading">MECKLENBURG PSYCHOLOGIST ASSOCIATION</h1>
-						<p className="landingCaption">Supporting mental health since 1960, the Mecklenburg Psychological Associat, is a not-for-profit association of licensed psychologist.</p>
+						<p className="landingCaption">Supporting mental health since 1960, the Mecklenburg Psychological Association, is a not-for-profit association of licensed psychologist.</p>
 						<a className="landingButton" href="/about">Learn More</a>
-				
 					</div>
 				</Container>
 			</div>
@@ -22,3 +21,4 @@ class Landing extends Component {
 
 
 export default Landing;
+
