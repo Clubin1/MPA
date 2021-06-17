@@ -1,55 +1,56 @@
-import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, {Component} from 'react';
+import {Container, Row, Col} from 'react-bootstrap';
 import axios from 'axios'
 import '../../Components/Styles/About.css';
 
 const apiUrl = process.env.API_URL || `http://localhost:1337`;
 
 
-
 class BoardMembers extends Component {
-	constructor(props) {
-		super(props); 
-		
-		this.state = {
-			board: []
-		}
-	}
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            board: []
+        }
+    }
 
 
+    async componentDidMount() {
+        try {
+            const res = await axios.get(apiUrl + '/boardmembers').then(res => {
+                console.log(res.data)
+                this.setState({board: res.data})
+            });
+        } catch (err) {
+            console.error(err)
+        }
+    }
 
-
-	async componentDidMount() {
-		try {
-			const res = await axios.get(apiUrl + '/boardmembers')
-  			.then(res => {
-  				console.log(res.data)
-				this.setState({board: res.data})
-  			});
-		} catch (err) {
-			console.error(err)
-		}
-	}
-
-	render() {
-		return (
-			<div>
-
-
-				<Row>
-			{this.state.board.map((board, index) =>
-					<Col md={4}>
-						<div className="boardMembers">
-							<h4 className="boardMembersName">{board.Name}</h4>
-							<h6 className="boardMembersPosition"><em>{board.Position}</em></h6>
-							<p>{board.Email}</p>
-						</div>
-					</Col>
-			)}
-				</Row>
-			</div>
-		);
-	}
+    render() {
+        return (
+            <div>
+                <Row> {
+                    this.state.board.map((board, index) => <Col md={4}>
+                        <div className="boardMembers">
+                            <h4 className="boardMembersName">
+                                {
+                                board.Name
+                            }</h4>
+                            <h6 className="boardMembersPosition">
+                                <em>{
+                                    board.Position
+                                }</em>
+                            </h6>
+                            <p>{
+                                board.Email
+                            }</p>
+                        </div>
+                    </Col>)
+                } </Row>
+            </div>
+        );
+    }
 }
 
 export default BoardMembers;

@@ -35,7 +35,7 @@ class About extends Component {
 	render() {
 		
 		return (
-			<div>
+			<div className="wrapper">
 				{this.state.aboutpage.map((about, index) =>
 						<div key={index}>
 					<Container>
@@ -48,14 +48,14 @@ class About extends Component {
 					
 							<div className="threeSection">
 								<Row>
-									<Col md={6}>
+									<Col>
 										<div className="servingSection" key={index + 2}>
 											<h1 className="servingHeader">{about.servingcomHeader}</h1>
 											<p className="servingCaption">{about.servingcomDesc}</p>
 										</div>	
 									</Col>
 
-									<Col md={6}>
+									<Col>
 										<div className="psychologistSection" key={index + 3}>
 											<h1 className="psychologistHeader">{about.psychologistservHeader}</h1>
 											<p className="psychologistCaption">{about.psychologistservDesc}</p>

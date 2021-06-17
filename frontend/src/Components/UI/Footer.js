@@ -3,22 +3,40 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import '../../Components/Styles/Styles.css';
 
-
 const Footer = () => {
 	return (
 		<div id="footer" className=" sticky-bottom">
 				<Row noGutters={true}>
-
-					<Col md={6}>
+					<Col className="upperFooter" md={6}>
 						<h1 className="footerLogo">MPACHARLOTTE</h1>
-					</Col>
-					<Col md={6}>
-						<h4 className="footerTag">Copyright 2021 © Mecklenburg Psychological Association. <br /> All rights reserved.</h4>
-					</Col>
+					</Col>	
+					<Col className="upperFooter" md={6}>
+						<a href="https://thenerodev.com"><img className="nerologo" src="/images/nerologo.png"/></a>
+					</Col>					
 				</Row>
 
-		</div>
+				<Row noGutters={true} className="footer-distributed">
+					<Col md={6}>
+		
 
+					<div className="footer-left">
+						<p className="footer-links">
+							<a className="link-1" href="/">Home</a>
+
+							<a href="/about">About</a>
+
+							<a href="/search">Search</a>
+
+							<a href="/membership">Professionals</a>
+
+							<a href="/contact">Contact</a>
+						</p>
+						<p>Mecklenburg Psychological Association &copy; 2019. All rights reserved</p>
+					</div>
+					</Col>
+					
+			</Row>
+		</div>
 	);
 }
 
