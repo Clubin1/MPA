@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
-import axios from 'axios'
+import { Row, Col} from 'react-bootstrap';
 import '../../Components/Styles/About.css';
 
-const apiUrl = process.env.API_URL || `http://localhost:1337`;
 
 
 class BoardMembers extends Component {
@@ -17,14 +15,13 @@ class BoardMembers extends Component {
 
 
     async componentDidMount() {
-        try {
-            const res = await axios.get(apiUrl + '/boardmembers').then(res => {
-                console.log(res.data)
-                this.setState({board: res.data})
-            });
-        } catch (err) {
-            console.error(err)
-        }
+        let response = await fetch('https://blooming-forest-09372.herokuapp.com/boardmembers')
+                if (! response.ok) {
+                    return
+                }
+                let info = await response.json()
+
+                this.setState({board: info})
     }
 
     render() {

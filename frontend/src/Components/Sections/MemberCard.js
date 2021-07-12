@@ -18,7 +18,7 @@ class MemberCard extends Component {
 
 
     async componentDidMount() {
-        let response = await fetch('http://localhost:1337/psychologists')
+        let response = await fetch('https://blooming-forest-09372.herokuapp.com//psychologists')
         if (! response.ok) {
             return
         }

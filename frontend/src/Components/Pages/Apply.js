@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 
 import { FormGroup, Label, Input } from "reactstrap";
 
@@ -42,7 +42,7 @@ function Apply() {
       data.name +
         ", thank you for your appliaction. We will get back to you shortly. Please submit your payment if required."
     );
-    const response = await fetch("http://localhost:1337/psychologists", {
+    const response = await fetch("https://blooming-forest-09372.herokuapp.com/psychologists", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -73,6 +73,7 @@ function Apply() {
 
     if (!response.ok) {
       setError(response.statusText);
+      console.log(error)
     }
   }
 

@@ -1,7 +1,7 @@
-import React, {Component, useState, useEffect} from "react";
+import React, { useState, useEffect} from "react";
 import axios from "axios";
-import Landing from "../../Components/Sections/Landing.js";
-import {Container, Row, Col} from "react-bootstrap";
+//import Landing from "../../Components/Sections/Landing.js";
+import {Container} from "react-bootstrap";
 
 import "../../Components/Styles/Styles.css";
 
@@ -11,13 +11,13 @@ const App = () => {
 
     // g
     async function fetchData() {
-        let response = await axios(`http://localhost:1337/psychologists?_limit=-1`);    //?_limit=-1 is to show all
+        let response = await axios(`https://blooming-forest-09372.herokuapp.com/psychologists?_limit=-1`);    //?_limit=-1 is to show all
         let user = await response.data;
         let userArr = [];
         let userNum = user.length;
 
         for (var i = 0; i < userNum; i++) {
-            if (user[i].isAccepted == true) {
+            if (user[i].isAccepted === true) {
                 userArr.push(user[i]);
             }
         }
@@ -103,7 +103,7 @@ const App = () => {
                         </div>
                         <div className="search-section"></div>
                         <div id="searchbar">
-                            <input type="text" placeholder="search"
+                            <input type="text"
                                 onChange={handleChange}
                                 value={input}
                                 name="query"
@@ -157,7 +157,7 @@ const App = () => {
                                             } </h6>
                                         </div>
                                         <div className="second-col">
-                                            <img className="image"
+                                            <img alt ="Member" className="image"
                                                 src={
                                                     `/images/${
                                                         psych.imgurl

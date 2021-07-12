@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios'
 
-
 import '../../Components/Styles/About.css';
 import BoardMembers from '../../Components/Sections/BoardMembers.js';
 
 
-const apiUrl = process.env.API_URL || `http://localhost:1337`;
+const apiUrl = process.env.API_URL || `https://blooming-forest-09372.herokuapp.com`;
 
 
 class About extends Component {
@@ -26,6 +25,7 @@ class About extends Component {
   			.then(res => {
 				this.setState({aboutpage: res.data})
   			});
+			console.log(res)
 		} catch (err) {
 			console.error(err)
 		}
