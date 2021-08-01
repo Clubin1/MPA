@@ -66,10 +66,11 @@ body:fade {
 .navbar-nav li{
   padding-right: 3rem;
   float: right;
+  font-size: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #752F37;
+  color: #ffffff;
   padding-top: .8rem;
 }
 
@@ -99,6 +100,7 @@ body:fade {
   background-color: #161616;
   text-align: center;
   z-index: auto;
+  width:99.4%!important;
 }
 
 .footerLogo {
@@ -121,14 +123,14 @@ body:fade {
 }
 
 .contact-section{
-  height: 40rem;
 }
 .resource-section{
   height: 63rem;
 }
 
 .faq-section{
-  height: 50rem;
+  height: 70rem;	
+  min-height: 50vh;
 }
 
 .Card{
@@ -485,7 +487,9 @@ section {
   font-weight: 700;
   text-decoration: underline;
 }
-
+.s{
+  height: 50rem;
+}
 .footer-distributed {
   background-color: #1D1D1D;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -699,7 +703,8 @@ section {
 }
 
 .professional-section{
-  height: 50rem;
+  height: 70rem;	
+  min-height: 50vh;
 }
 
 .professionalsImage{
@@ -739,8 +744,8 @@ section {
 }
 
 .payment-section{
-  height: auto;
-  min-height: 40rem;
+  height: 70rem;	
+  min-height: 50vh;
 }
 
 .position{
@@ -777,7 +782,7 @@ a{
     text-align: center!important;
   }
   #footer{
-    width: 96.1%!important;
+    width: 100vw!important;
   }
   .contact-land{
     height: 15rem!important;
@@ -879,4 +884,10 @@ a{
     z-index: auto;
     width: 96.4vw!important;
   }
+}
+
+
+.twotime{
+  font-weight: 600;
+  text-align: center;
 }
